@@ -350,28 +350,33 @@ body {
         flex-flow: row nowrap;
         overflow: auto;
         grid-area: thefirst;
-        background-color: green;
+        background-color: transparent;
         /* justify-content: space-around; */
-        
+        /* scroll-behavior: smooth; */
+        scrollbar-width:thin;
+        scrollbar-color: transparent transparent;
+}
+.gridsec-one:hover{
+    scrollbar-color: rgba(43, 42, 42, 0.397) transparent;
 }
 
 .posterno-10{
     width:180px;
     height: 252px;
 
-    background-color: grey;
+    background-color:black;
     flex-basis: 1;
     flex-shrink: 0;
-    outline:2px solid white;
+    outline:0px solid black;
     padding:8px 22px;
 }
 .posterno-10 img{
     height: 100%;
     width: 100%;
-    outline:2px solid green;
+    outline:1.5px solid rgba(209, 206, 206, 0.555);
     border: 0;
     border-radius: 6px;
     object-fit: cover;
     object-position: center;
-    filter: brightness(0.6);
+    filter: brightness(0.8);
 }
