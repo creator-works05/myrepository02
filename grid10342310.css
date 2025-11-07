@@ -67,7 +67,7 @@ body {
 }
 
 .c0-item3 {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 27, 66);
     /* display: flex; */
     flex-direction: row;
     flex-wrap: nowrap;
@@ -306,7 +306,7 @@ body {
     /* background-color: rgb(255, 255, 255); */
     position: relative;
     box-sizing: border-box;
-      background: radial-gradient(ellipse at 50% 15%,rgba(166, 165, 180, 0.452) 20% 10%,rgb(31, 30, 30) 30%, black 100%);
+      background: radial-gradient(ellipse at 50% 15%,rgba(255, 255, 255, 0.075) 20% 2%,rgb(31, 30, 30) 30% 10%, black 100%);
     border-top: 2px solid red;
     border-radius: 49% 49% 0 0;
 }
@@ -326,5 +326,52 @@ body {
 }
 .trendhead{
     color:white;
-    transform: translate(39px,28px);
+    transform: translate(150px,28px);
+    font-family:'netflix-sans-reg';
+    font-size: 24px;
+    font-weight: 600;
+}
+.the-secondbox{
+    height: 100vh;
+    width:100vw;
+    background-color:black;
+    display:grid;
+    grid-template-columns:9% auto 9%;
+    grid-template-rows:auto auto ;
+    grid-template-areas:". thefirst . "
+                        ". thesecond ."
+                                        ;
+
+}
+.gridsec-one{
+        display:flex;
+        height: fit-content;
+        width: 100%;
+        flex-flow: row nowrap;
+        overflow: auto;
+        grid-area: thefirst;
+        background-color: green;
+        /* justify-content: space-around; */
+        
+}
+
+.posterno-10{
+    width:180px;
+    height: 252px;
+
+    background-color: grey;
+    flex-basis: 1;
+    flex-shrink: 0;
+    outline:2px solid white;
+    padding:8px 22px;
+}
+.posterno-10 img{
+    height: 100%;
+    width: 100%;
+    outline:2px solid green;
+    border: 0;
+    border-radius: 6px;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.6);
 }
