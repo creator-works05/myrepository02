@@ -356,7 +356,7 @@ body {
         /* scroll-behavior: smooth; */
         scrollbar-width:thin;
         scrollbar-color: transparent transparent;
-        padding-bottom: 80px;
+        /* padding-bottom: 80px; */
 }
 .gridsec-one:hover{
     scrollbar-color: rgba(43, 42, 42, 0.397) transparent;
@@ -381,4 +381,16 @@ body {
     object-fit: cover;
     object-position: center;
     filter: brightness(0.8);
+}
+.gridsec-two{
+    grid-area: thesecond;
+    background-color: red;
+    display:grid ;
+    grid-template-rows:300px 100px 100px;
+    grid-template-areas:"first"
+                        "second"
+                         "third";
+    
+
+
 }
